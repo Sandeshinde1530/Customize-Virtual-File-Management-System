@@ -1,0 +1,34 @@
+# Ignore Windows executables and object files
+*.exe
+*.o
+*.obj
+*.dll
+
+# Ignore Linux executables if moved across OS
+a.out
+
+# Ignore Visual Studio Code workspace settings
+.vscode/
+
+# Ignore backup files
+*~
+*.bak
+*.tmp
+*.swp
+
+# Ignore log files
+*.log
+
+# Ignore compiled debug folders
+Debug/
+Release/
+
+# Ignore any core dump files
+core
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore Git ignore file itself (if needed)
+!.gitignore
