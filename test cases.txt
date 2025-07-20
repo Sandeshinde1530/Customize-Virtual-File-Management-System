@@ -1,0 +1,67 @@
+help
+man create
+create file1.txt 3
+ls
+man write
+write file1.txt
+Hello! This is file1 written with full permission.
+man read
+read file1.txt 100
+man lseek
+lseek file1.txt 5 0
+read file1.txt 10
+lseek file1.txt -3 1
+read file1.txt 5
+man truncate
+truncate file1.txt
+ls
+read file1.txt 10
+write file1.txt
+Back again after truncate!
+read file1.txt 100
+man stat
+stat file1.txt
+man fstat
+fstat 3
+man close
+close file1.txt
+ls
+man open
+open file1.txt 1
+write file1.txt
+
+open file1.txt 2
+read file1.txt 10
+
+open file1.txt 3
+read file1.txt 10
+ls
+create file2.txt 1
+ls
+write file2.txt
+read file2.txt 20
+truncate file2.txt
+read file2.txt 20
+ls
+create file3.txt 2
+ls
+write file3.txt
+This is file3 with write-only permission.
+read file3.txt 10
+lseek file3.txt 5 0
+lseek file3.txt -2 1
+lseek file3.txt 0 2
+stat file3.txt
+fstat 5
+close file1.txt
+close file2.txt
+close file3.txt
+man closeall
+closeall
+ls
+man rm
+rm file1.txt
+rm file2.txt
+rm file3.txt
+ls
+exit
